@@ -1,0 +1,23 @@
+{
+  "name": "aws-secrets-puller",
+  "version": "1.0.0",
+  "main": "ssm-puller.js",
+  "scripts": {
+    "start": "node ssm-puller.js",
+    "package": "pkg --out-dir=dist ssm-puller.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.429.0"
+  },
+  "devDependencies": {
+    "pkg": "^4.3.7"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": "An ssm secrets puller for use with the command line"
+}
