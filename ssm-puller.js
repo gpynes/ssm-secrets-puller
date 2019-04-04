@@ -26,3 +26,4 @@ ssm.describeParameters({
     .then(fetchParams(ssm))
     .then(extractNameAndValueForEachParam)
     .then(writeEachParamToSecretsFile(secrectsFile))
+    .catch(err => console.log('ERROR RETRIEVING PARAMETERS', err))
